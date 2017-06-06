@@ -136,11 +136,6 @@
                   return response.bodyText
                 }
               }).then((downloadUrl) => {
-                console.log(myFileSize)
-                console.log(myFileName)
-                console.log(myFileKey)
-                console.log(downloadUrl)
-                console.log(token)
                 /*将文件的一些值与父级进行通讯以便父级可以根据这些值进行相应的操作*/
                 this.onSuccess(downloadUrl, myFileKey, myFileSize, myFileName, this.index)
               }).catch((error) => {
